@@ -7,31 +7,35 @@ const TrainingSkills = () => {
     // Array of skill objects with title and content
     const skills = [
         {
-            id: 1, // Unique ID for React keys
-            title: "Language Trainer",
-            content: "I have helped individuals with all aspects of English language learning, from grammar and vocabulary to pronunciation and fluency."
+            id: 1,
+            title: "English Language Trainer",
+            content: "I haved helped with all aspects of English language learning, from grammar and vocabulary to pronunciation and fluency.",
         },
         {
             id: 2,
             title: "Career Development Program Facilitator",
-            content: "I guide participants through comprehensive career development programs, focusing on goal setting, professional growth strategies, and navigating career paths."
+            content: "The program covers a variety of topics, such as resume writing, interviewing, and networking.It is designed to help individuals identify their career goals, develop a career plan, and find a job that they love.",
         },
         {
             id: 3,
             title: "Soft Skill Trainer",
-            content: "My training enhances crucial interpersonal skills, including communication, teamwork, problem-solving, and adaptability, essential for personal and professional success."
+            content: "Develop a business plan, identify and overcome challenges, and improve your leadership skills. Whether you are a startup or an established business, It help you achieve your business goals.",
         },
         {
             id: 4,
             title: "Personality Development Trainer",
-            content: "I empower individuals to cultivate a strong, positive personality, fostering confidence, self-awareness, and effective self-presentation."
+            content: "Identify your strengths and weaknesses, and develop strategies for personal growth.Whether you are looking to improve your personal or professional life, and develop your personality.",
         },
-        // Add more skill objects as needed
-        // {
-        //     id: 5,
-        //     title: "Another Skill",
-        //     content: "Description of another relevant skill or training area."
-        // },
+        {
+            id: 5,
+            title: "Business Coach",
+            content: "Develop a business plan, identify and overcome challenges, and improve your leadership skills. Whether you are a startup or an established business, It help you achieve your business goals.",
+        },
+        {
+            id: 6,
+            title: "Student Development Trainer",
+            content: "The program covers a variety of topics, such as time management, study skills, and career planning.It is designed to help students develop the skills and confidence they need to achieve their academic and personal goals.",
+        },
     ];
 
     return (

@@ -3,10 +3,58 @@ import profileImage from '../assets/profile.png'; // Ensure the path to your pro
 import Title from '../utils/Title'; // Assuming Title.jsx is in a 'utils' folder
 import Button from '../utils/Button'; // Assuming Button.jsx is in a 'utils' folder
 
+
+const Item = ({ title, content }) => {
+    return (
+        <div className="mb-6 p-4 bg-white rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold text-blue-700">{title}</h3>
+            <p className="text-gray-700 mt-1">{content}</p>
+        </div>
+    );
+};
 const About = () => {
+
+    const experience = [
+        {
+            title: "Serco International BPO",
+            content: "English & Soft Skills Trainer"
+        },
+        {
+            title: "Indus Management Consultants",
+            content: "Language and Communication Coach"
+        },
+        {
+            title: "Tech Mahindra Foundation",
+            content: "English Language & Soft Skills Mentor"
+        },
+        {
+            title: "AA - Edutech British Council",
+            content: "English Fluency and Soft Skills Expert"
+        },
+        {
+            title: "ICT Academy",
+            content: "Corporate Soft Skills Trainer"
+        }
+    ];
+
+
+    const awards = [
+        {
+            title: "Gold medal from Cambridge Assessment",
+            content: "MASTER TRAINER Soft Skills"
+        },
+        {
+            title: "Best Achiever Award",
+            content: "Young Professional leader"
+        },
+        {
+            title: "Appreciation Award",
+            content: "Excellence in profession"
+        }
+    ];
     return (
         <section id='about' className="py-16 bg-blue-50"> {/* Changed to bg-blue-50 for a softer blue */}
-            <div className='container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8'> {/* Added gap-8 for spacing */}
+            <div className='container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 p-4'> {/* Added gap-8 for spacing */}
                 {/* Image Section */}
                 <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
                     {/* Reverting to fixed sizes for consistent circular shape */}
@@ -48,6 +96,31 @@ const About = () => {
                             handleClick={() => console.log('Get my AV clicked')}
                         />
                     </div>
+                </div>
+            </div>
+            <div className="screen bg-blue-100 p-8">
+                <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-8 justify-center items-start">
+                    <section id="experience" className="w-full md:w-1/2 mb-8 md:mb-0">
+                        <div className="bg-blue-50 p-6 rounded-lg shadow-lg h-full">
+                            <Title text="Experience" />
+                            <div>
+                                {experience.map((i, index) => (
+                                    <Item key={index} title={i.title} content={i.content} />
+                                ))}
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="awards" className="w-full md:w-1/2">
+                        <div className="bg-blue-50 p-6 rounded-lg shadow-lg h-full">
+                            <Title text="Awards" />
+                            <div>
+                                {awards.map((i, index) => (
+                                    <Item key={index} title={i.title} content={i.content} />
+                                ))}
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </section>
