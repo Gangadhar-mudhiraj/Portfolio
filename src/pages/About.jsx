@@ -2,7 +2,7 @@ import { useState } from 'react';
 import profileImage from '../assets/profile.png'; // Ensure the path to your profile image is correct
 import Title from '../utils/Title'; // Assuming Title.jsx is in a 'utils' folder
 import Button from '../utils/Button'; // Assuming Button.jsx is in a 'utils' folder
-
+import { useNavigate } from 'react-router-dom';
 
 import bestAchieverImage from "../assets/best-achiever.png";
 import appreciationImage from "../assets/appreciation.png";
@@ -11,7 +11,7 @@ import cambridgeMedalImage from "../assets/camebridge.png";
 const Item = ({ title, content }) => {
     return (
         <div className="mb-6 p-4 bg-white rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold text-blue-700">{title}</h3>
+            <h3 className="text-xl font-semibold text-sky-500">{title}</h3>
             <p className="text-gray-700 mt-1">{content}</p>
         </div>
     );
@@ -29,7 +29,7 @@ const Award = ({ title, content, image }) => {
     return (
         <div className="mb-6 p-4 bg-white rounded-lg shadow-md">
             <h3
-                className="text-xl font-semibold text-blue-700 cursor-pointer"
+                className="text-xl font-semibold text-sky-500 cursor-pointer"
                 onClick={handleTitleClick}
             >
                 {title}
@@ -47,6 +47,7 @@ const Award = ({ title, content, image }) => {
 };
 
 const About = () => {
+    const navigate = useNavigate()
 
     const experience = [
         {
@@ -120,17 +121,23 @@ const About = () => {
                         <Button
                             text={"more about me".toUpperCase()}
                             className='bg-black hover:bg-gray-800 text-white' // Explicitly define all colors
-                            handleClick={() => console.log('More about me clicked')}
+                            handleClick={() => navigate("#skills")}
                         />
                         <Button
                             text={"get in touch".toUpperCase()}
                             className='bg-transparent border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white' // Explicitly define all colors
-                            handleClick={() => console.log('Get in touch clicked')}
+                            handleClick={() => {
+                                navigate("#contact")
+                            }}
                         />
                         <Button
                             text={"get my av".toUpperCase()}
                             className='bg-transparent border border-gray-400 text-gray-600 hover:bg-gray-200' // Explicitly define all colors
-                            handleClick={() => console.log('Get my AV clicked')}
+                            handleClick={() => {
+                                const fileUrl = "https://rajdeeraj.netlify.app/final.mp4";
+                                // Option 1: Open in a new tab/window (most common for external files)
+                                window.open(fileUrl, '_blank');
+                            }}
                         />
                     </div>
                 </div>

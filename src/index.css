@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+/* In your global CSS file (e.g., index.css, globals.css, or App.css) */
+html {
+    scroll-behavior: smooth;
+    /* Optional: for smooth scrolling animation */
+    scroll-padding-top: 80px;
+    /* Adjust this value to your fixed Navbar's height */
+}
+
+/* You might also want to ensure your Navbar has a defined height */
+.sticky.top-0 {
+    height: 64px;
+    /* Example: If your py-4 (16px top + 16px bottom) + other content sums to 64px */
+}
+
+/* Or, more reliably, set a min-height for the Navbar */
+.py-4 {
+    min-height: 64px;
+    /* Example, adjust as needed */
+}

@@ -39,7 +39,7 @@ const TrainingSkills = () => {
     ];
 
     return (
-        <section id='training-skills' className="py-16 bg-blue-50"> {/* Added a unique ID and background */}
+        <section id='skills' className="py-16 bg-blue-50"> {/* Added a unique ID and background */}
             <div className="container mx-auto px-4">
                 {/* Reusable Title component for the section heading */}
                 <Title text={"TRAINING SKILLS"} className="text-center mb-12" /> {/* Centered and added margin-bottom */}

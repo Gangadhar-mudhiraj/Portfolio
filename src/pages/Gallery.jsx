@@ -1,10 +1,28 @@
 
 import Title from "../utils/Title"; // Assuming Title component handles its own styling
-import tkrLogo from "../assets/tkr.png"; // Descriptive names for imports
-import mruLogo from "../assets/mru.png";
-import cmrLogo from "../assets/cmr.png";
-import avnLogo from "../assets/avn.png";
 
+import AITLogo from "../assets/AIT.jpeg";
+import AnuragUniversityLogo from "../assets/Anuraguniversity.jpg";
+
+import BVRITLogo from "../assets/bvrit.png";
+import CBITLogo from "../assets/CBIT.png";
+import CMRCETLogo from "../assets/cmrcet.jpeg";
+import CMRJEEELogo from "../assets/CMR.jpeg"; // Renamed to avoid conflict with cmr.png, assuming it's different
+import GITAMLogo from "../assets/GITAM.jpg";
+import KITSLogo from "../assets/KITS.png";
+import MallareddyUniversityLogo from "../assets/Mallareddyuniversity.jpg";
+import MRCELogo from "../assets/MRCE.jpeg";
+import MRECWLogo from "../assets/MRECW.png";
+
+
+import QISLogo from "../assets/QIS.jpeg";
+import RITLogo from "../assets/RIT.jpg";
+import SardarLogo from "../assets/Sardar.jpg";
+
+import TKRJEEELogo from "../assets/TKR.jpeg"; // Renamed to avoid conflict with tkr.png
+
+import VasaviLogo from "../assets/Vasavi.jpeg";
+import Album from "./Album";
 
 
 const Achievement = ({ number, title, description }) => {
@@ -48,11 +66,6 @@ const Item = ({ image, title, subTitle, description, appreciation }) => {
                     </p>
                 )}
             </div>
-
-            <div>
-                //achievements
-
-            </div>
         </div>
     );
 };
@@ -87,37 +100,106 @@ const Gallery = () => {
     ];
     const testimonials = [
         {
-            title: "Muktha Ghosh",
-            subTitle: "CMR College of Engineering & Technology",
-            image: cmrLogo,
-            description: "The soft skills session was incredibly enriching, providing valuable insights and logic to enhance both personal and professional development. Training is delivered with fun learning activities. ",
-            appreciation: "Thank you Raja DeeRaj sir for your soft skills session, it helped me in work place and liked your positive gesture."
+            title: "Kalyan Raja",
+            subTitle: "cmrcet",
+            description: "Our trainer Raja DeeRaj sir is incredibly knowledgeable and passionate on training in Soft Skills area. Sir always go above and beyond to ensure to get good outcome.",
+            image: CMRCETLogo
         },
         {
-            title: "M.Deepika Rani",
+            title: "Pravalika Chilvuri",
             subTitle: "Malla Reddy University",
+            description: "I've learned so much from this training how to be assertive engaging and interactive with team positively. Our trainer Raja DeeRaj sir training is fun learning activity based.",
+            image: MallareddyUniversityLogo // Added image
+        },
+        {
+            title: "Yashwanth vedagiri",
+            subTitle: "KITS",
+            description: "My trainer Raja Deeraj sir’s ability to explain complex concepts in a clear and concise manner is truly remarkable. I feel confident in my understanding now.",
+            image: KITSLogo // Added image
+        },
+        {
+            title: " R.Moksha Sri",
+            subTitle: "Anurag university",
+            description: "Our trainer Raja DeeRaj sir has a knack for creating a supportive and encouraging learning environment. I feel comfortable asking questions and participating in class.",
+            image: AnuragUniversityLogo // Added image
+        },
+        {
+            title: "Sharanya",
+            subTitle: "CBIT",
+            description: "My trainer Raja DeeRaj sir is not only an excellent facilitator but also a great mentor. His training methodology helped me grow both personally and professionally which leads to achieve in career.",
+            image: CBITLogo // Added image
+        },
+        {
+            title: "Sudha Rani",
+            subTitle: "TRK", // Assuming TRK refers to TKR.jpeg or tkr.png
+            description: "I was struggling with proper communication before, attended Raja DeeRaj sir sessions regularly happy for the trainer's patience and clear explanations, I can speak now understand it completely in communication with confident",
+            image: TKRJEEELogo // Assuming TKR.jpeg. If you meant tkr.png, use TKRLogo here.
+        },
+        {
+            title: "Mahesh Reddy",
+            subTitle: "QIS",
+            description: "Raja DeeRaj sir is a good trainer has a unique ability to make even the most challenging topics easy to grasp. Sir is always willing to explain things multiple times until everyone understands.",
+            image: QISLogo // Added image
+        },
+        {
+            title: "Deekshitha",
+            subTitle: "RIT",
+            description: "Our trainer Raja DeeRaj has a fantastic ability to connect with students and make them feel comfortable. They're always approachable and willing to help.",
+            image: RITLogo // Added image
+        },
+        {
+            title: "Sangitha pandit",
+            subTitle: "AIT",
+            description: "My trainer Raja DeeRaj has inspired me to pursue my goals with greater determination. I'm now more motivated than ever before. Sir is having sophisticated content with rich experience in training methodologies to get good results.",
+            image: AITLogo // Added image
+        },
+        {
+            title: "M Nandini",
+            subTitle: "MRECW",
+            description: "Raja DeeRaj sir is a trainer cum motivator has helped me develop a love for learning. I'm now excited to continue my education and pursue new challenges. I'm so grateful for the opportunity to learn from this trainer.",
+            image: MRECWLogo // Added image
+        },
+        {
+            title: "Tejaswini",
+            subTitle: "Vasavi engineering college",
+            description: "The soft skills session was incredibly enriching, providing valuable insights and logic to enhance both personal and professional development. Training is delivered with fun learning activities. ",
+            image: VasaviLogo // Added image
+        },
+        {
+            title: "Rishita Nanduri",
+            subTitle: "Sardar",
             description: "This Soft Skills session has a unique ability to create a comfortable learning environment where everyone feels empowered to participate and share their thoughts. This made the training sessions both informative and enjoyable.",
-            appreciation: " I was initially hesitant about attending a soft skills workshop, but Raja DeeRaj sir's practical approach and positive energy made a huge difference.",
-            image: mruLogo
+            image: SardarLogo // Added image
         },
         {
-            title: "Shirisha Naidu",
-            subTitle: "AVN College",
-            image: avnLogo,
+            title: "Deepika Rani ",
+            subTitle: "GITAM UNIVERSITY",
             description: "The Soft Skills session was superb, interactive and engaging. The trainer's methodology is enthusiastic, and I loved the way of explanation.",
-            appreciation: "Thank you Raja DeeRaj sir for your enlightening skills; I became passionate towards learning new skills such as these."
+            image: GITAMLogo // Added image
         },
         {
-            title: "Aruna Devi",
-            image: tkrLogo,
-            subTitle: "TKR College",
+            title: "Abhinay vollala",
+            subTitle: "CMR", // Assuming this CMR refers to CMR.jpeg or cmr.png
             description: "MASTER in soft skills, Raja DeeRaj is a fantastic trainer with an enthusiastic personality. He made every concept practical and engaging. ",
-            appreciation: "His excellent training delivery and interactive approach helped us develop confidence and professionalism. This valuable program has greatly enhanced my corporate readiness."
+            image: CMRJEEELogo // Assuming CMR.jpeg. If you have a separate cmr.png, use CMRLogo here.
+        },
+        {
+            title: "Sirisha Meda",
+            subTitle: "bvrit",
+            description: "The communication workshop was a game- changer! Raja DeeRaj sir's approach made complex ideas incredibly easy to grasp, and his energy was truly infectious. I walked away feeling far more confident and equipped.",// Description is empty, you might want to fill this later",
+            image: BVRITLogo // Added image
+        },
+        {
+            title: "Aruna devi",
+            subTitle: "MRCE",
+            description: "I've attended many training sessions, but this soft skills program by Raja DeeRaj sir stood out. The practical exercises and sir's clear, enthusiastic guidance made every moment valuable. Highly recommend for anyone looking to genuinely improve.", // Description is empty, you might want to fill this later
+            image: MRCELogo // Added image
         }
     ];
 
     return (
         <section id='gallery' className="py-16 bg-blue-50"> {/* Light blue background */}
+            <Album />
             <div className="container mx-auto px-4">
                 <Title text={"Hear it from My Happy Pupils"} className="text-center mb-12 text-blue-800" /> {/* Centering title and adjusting color */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8"> {/* Responsive grid layout */}
