@@ -1,8 +1,12 @@
-import React from 'react';
+import { useState } from 'react';
 import profileImage from '../assets/profile.png'; // Ensure the path to your profile image is correct
 import Title from '../utils/Title'; // Assuming Title.jsx is in a 'utils' folder
 import Button from '../utils/Button'; // Assuming Button.jsx is in a 'utils' folder
 
+
+import bestAchieverImage from "../assets/best-achiever.png";
+import appreciationImage from "../assets/appreciation.png";
+import cambridgeMedalImage from "../assets/camebridge.png";
 
 const Item = ({ title, content }) => {
     return (
@@ -12,6 +16,36 @@ const Item = ({ title, content }) => {
         </div>
     );
 };
+
+const Award = ({ title, content, image }) => {
+    // State to control whether the image is visible or not
+    const [showImage, setShowImage] = useState(false);
+
+    // Function to toggle the image's visibility
+    const handleTitleClick = () => {
+        setShowImage(!showImage); // Toggles between true and false
+    };
+
+    return (
+        <div className="mb-6 p-4 bg-white rounded-lg shadow-md">
+            <h3
+                className="text-xl font-semibold text-blue-700 cursor-pointer"
+                onClick={handleTitleClick}
+            >
+                {title}
+            </h3>
+            <p className="text-gray-700 mt-1">{content}</p>
+
+            {/* Conditionally render the image based on the 'showImage' state */}
+            {showImage && (
+                <div className="mt-4 flex justify-center">
+                    <img src={image} alt={title} className="max-w-full h-auto rounded-md shadow-lg" />
+                </div>
+            )}
+        </div>
+    );
+};
+
 const About = () => {
 
     const experience = [
@@ -38,18 +72,21 @@ const About = () => {
     ];
 
 
-    const awards = [
+    const awardsData = [
         {
-            title: "Gold medal from Cambridge Assessment",
-            content: "MASTER TRAINER Soft Skills"
+            name: "Gold medal from Cambridge Assessment",
+            description: "MASTER TRAINER Soft Skills",
+            image: cambridgeMedalImage // Using the descriptive import name
         },
         {
-            title: "Best Achiever Award",
-            content: "Young Professional leader"
+            name: "Best Achiever Award",
+            description: "Young Professional leader",
+            image: bestAchieverImage // Using the descriptive import name
         },
         {
-            title: "Appreciation Award",
-            content: "Excellence in profession"
+            name: "Appreciation Award",
+            description: "Excellence in profession",
+            image: appreciationImage // Using the descriptive import name
         }
     ];
     return (
@@ -115,8 +152,8 @@ const About = () => {
                         <div className="bg-blue-50 p-6 rounded-lg shadow-lg h-full">
                             <Title text="Awards" />
                             <div>
-                                {awards.map((i, index) => (
-                                    <Item key={index} title={i.title} content={i.content} />
+                                {awardsData.map((i, index) => (
+                                    <Award key={index} title={i.name} content={i.description} image={i.image} />
                                 ))}
                             </div>
                         </div>
