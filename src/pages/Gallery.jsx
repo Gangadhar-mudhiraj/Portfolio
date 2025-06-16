@@ -99,12 +99,7 @@ const Gallery = () => {
         }
     ];
     const testimonials = [
-        {
-            title: "Kalyan Raja",
-            subTitle: "cmrcet",
-            description: "Our trainer Raja DeeRaj sir is incredibly knowledgeable and passionate on training in Soft Skills area. Sir always go above and beyond to ensure to get good outcome.",
-            image: CMRCETLogo
-        },
+
         {
             title: "Pravalika Chilvuri",
             subTitle: "Malla Reddy University",

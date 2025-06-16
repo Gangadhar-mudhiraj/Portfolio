@@ -61,19 +61,19 @@ const About = () => {
     const experience = [
         {
             title: "Serco International BPO",
-            content: "English & Soft Skills Trainer"
+            content: "Master Trainer - English & Soft Skills "
         },
         {
             title: "Indus Management Consultants",
-            content: "Language and Communication Coach"
+            content: "Master Trainer - English & Soft Skills "
         },
         {
             title: "Tech Mahindra Foundation",
-            content: "English Language & Soft Skills Mentor"
+            content: "Master Trainer - English & Soft Skills "
         },
         {
             title: "AA - Edutech British Council",
-            content: "English Fluency and Soft Skills Expert"
+            content: "Master Trainer - English & Soft Skills "
         },
         {
             title: "ICT Academy",

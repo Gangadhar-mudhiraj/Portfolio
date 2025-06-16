@@ -14,8 +14,8 @@ const Contactme = () => {
         { name: "LinkedIn", url: "https://www.linkedin.com/in/raja-deeraj-b5200a34a/" },
 
         // Keeping Facebook and Instagram as placeholders, you can update them
-        { name: "Facebook", url: "https://facebook.com/yourprofile" },
-        { name: "Instagram", url: "https://instagram.com/yourprofile" },
+        { name: "Facebook", url: "https://www.facebook.com/profile.php?id=61577124824119" },
+        { name: "Instagram", url: "https://www.instagram.com/raja_dheeraj3/" },
     ];
 
     // Function to handle "Message Me" button click
@@ -110,7 +110,7 @@ const Contactme = () => {
                         </a>
                         {/* Twitter Icon using react-icons */}
                         <a
-                            href="https://x.com/RajaDeeRaj10?t=Zbc_zW7ZCzPRBOeV7aWUmw&s=08"
+                            href="https://www.facebook.com/profile.php?id=61577124824119"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-400 hover:text-blue-400 transition duration-300"
