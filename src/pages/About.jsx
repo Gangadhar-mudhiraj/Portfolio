@@ -2,8 +2,8 @@ import { useState } from 'react';
 import profileImage from '../assets/profile.png'; // Ensure the path to your profile image is correct
 import Title from '../utils/Title'; // Assuming Title.jsx is in a 'utils' folder
 import Button from '../utils/Button'; // Assuming Button.jsx is in a 'utils' folder
+import resume from "../assets/resume.png"
 import { useNavigate } from 'react-router-dom';
-
 import bestAchieverImage from "../assets/best-achiever.png";
 import appreciationImage from "../assets/appreciation.png";
 import cambridgeMedalImage from "../assets/camebridge.png";
@@ -46,7 +46,16 @@ const Award = ({ title, content, image }) => {
     );
 };
 
+
+
 const About = () => {
+
+    const handleProfile = () => {
+        const profileImageUrl = resume;
+        window.open(resume, "_blank")
+
+    }
+
     const navigate = useNavigate()
 
     const experience = [
@@ -94,12 +103,11 @@ const About = () => {
         <section id='about' className="py-16 bg-blue-50"> {/* Changed to bg-blue-50 for a softer blue */}
             <div className='container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 p-4'> {/* Added gap-8 for spacing */}
                 {/* Image Section */}
-                <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
-                    {/* Reverting to fixed sizes for consistent circular shape */}
-                    <div className="rounded-full overflow-hidden h-1/4 w-1/3 shadow-md">
-
-                        <img src={profileImage} alt="Profile of RajaDeeRaj" className="object-cover w-full h-full" />
-
+                <div className=" flex justify-center mb-8 md:mb-0">
+                    <div className="rounded-full overflow-hidden h-98 w-60 shadow-md">
+                        {/* object-position can shift the visible part, but it's still a circular crop */}
+                        <img src={profileImage} alt="Profile of RajaDeeRaj" />
+                        {/* You might need custom values like object-[position_value] or adjust based on your image */}
                     </div>
                 </div>
 
@@ -109,7 +117,7 @@ const About = () => {
                     <h1 className="text-3xl md:text-4xl font-bold text-blue-700 mb-2">Hello</h1>
 
                     {/* Reusable Title component for the name */}
-                    <Title text={"I'm RajaDeeRaj"} className="!text-gray-800 !text-4xl md:!text-5xl lg:!text-6xl !mb-4" /> {/* Overriding Title defaults */}
+                    <Title text={"I'm Raja DeeRaj"} className="!text-gray-800 !text-4xl md:!text-5xl lg:!text-6xl !mb-4" /> {/* Overriding Title defaults */}
 
                     {/* Description paragraph */}
                     <p className="text-lg text-gray-600 mb-8 max-w-prose md:max-w-none mx-auto"> {/* Added max-w-prose for readability on wide screens */}
@@ -119,19 +127,20 @@ const About = () => {
                     {/* Action Buttons */}
                     <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
                         <Button
-                            text={"more about me".toUpperCase()}
+                            text={"get my profile".toUpperCase()}
                             className='bg-black hover:bg-gray-800 text-white' // Explicitly define all colors
-                            handleClick={() => navigate("#skills")}
+                            handleClick={handleProfile}
                         />
+
                         <Button
-                            text={"get in touch".toUpperCase()}
+                            text={"get my portfolio".toUpperCase()}
                             className='bg-transparent border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white' // Explicitly define all colors
                             handleClick={() => {
-                                navigate("#contact")
+                                window.open("https://drive.google.com/file/d/13pR4EqEfQBOAIVjWtsAfYZJ4Kn8KmwF2/view?usp=drivesdk", "_blank")
                             }}
                         />
                         <Button
-                            text={"get my av".toUpperCase()}
+                            text={"getmyav".toUpperCase()}
                             className='bg-transparent border border-gray-400 text-gray-600 hover:bg-gray-200' // Explicitly define all colors
                             handleClick={() => {
                                 const fileUrl = "https://rajdeeraj.netlify.app/final.mp4";
