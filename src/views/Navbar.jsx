@@ -9,11 +9,11 @@ const Navbar = () => {
     const location = useLocation(); // Get the current location object
 
     const navItems = [
-        { id: 1, text: "About", url: "/#about" },
+        { id: 1, text: "About Me", url: "/#about" },
         { id: 2, text: "Skills", url: "/#skills" },
         { id: 3, text: "Gallery", url: "/#gallery" },
         // { id: 4, text: "Experience", url: "/" }, // This is a different route
-        { id: 5, text: "Software Solution", url: "/software-solution" }, // This is a different route
+        { id: 5, text: "Books", url: "/software-solution" }, // This is a different route
         { id: 6, text: "Contact", url: "/#contact" },
     ];
 

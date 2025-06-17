@@ -99,12 +99,7 @@ const Gallery = () => {
         }
     ];
     const testimonials = [
-        {
-            title: "Kalyan Raja",
-            subTitle: "cmrcet",
-            description: "Our trainer Raja DeeRaj sir is incredibly knowledgeable and passionate on training in Soft Skills area. Sir always go above and beyond to ensure to get good outcome.",
-            image: CMRCETLogo
-        },
+
         {
             title: "Pravalika Chilvuri",
             subTitle: "Malla Reddy University",
@@ -200,7 +195,7 @@ const Gallery = () => {
     return (
         <section id='gallery' className="py-16 bg-blue-50"> {/* Light blue background */}
             <Album />
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto p-6">
                 <Title text={"Hear it from My Happy Pupils"} className="text-center mb-12 text-blue-800" /> {/* Centering title and adjusting color */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8"> {/* Responsive grid layout */}
                     {testimonials.map((item, index) => ( // Corrected mapping syntax

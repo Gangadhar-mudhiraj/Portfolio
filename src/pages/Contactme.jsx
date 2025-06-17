@@ -3,7 +3,7 @@ import Title from "../utils/Title"; // Assuming Title component handles its own 
 import Button from "../utils/Button"; // Import the Button component
 
 // Import specific icons from react-icons/fa (for Font Awesome icons)
-import { FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 const Contactme = () => {
     // Define your social media links dynamically with actual URLs
@@ -12,10 +12,10 @@ const Contactme = () => {
         // Note: These are for the "Follow Me" section which still displays text names.
         // The actual icons are in the footer.
         { name: "LinkedIn", url: "https://www.linkedin.com/in/raja-deeraj-b5200a34a/" },
-        { name: "Twitter", url: "https://x.com/RajaDeeRaj10?t=Zbc_zW7ZCzPRBOeV7aWUmw&s=08" },
+
         // Keeping Facebook and Instagram as placeholders, you can update them
-        { name: "Facebook", url: "https://facebook.com/yourprofile" },
-        { name: "Instagram", url: "https://instagram.com/yourprofile" },
+        { name: "Facebook", url: "https://www.facebook.com/profile.php?id=61577124824119" },
+        { name: "Instagram", url: "https://www.instagram.com/raja_dheeraj3/" },
     ];
 
     // Function to handle "Message Me" button click
@@ -110,17 +110,17 @@ const Contactme = () => {
                         </a>
                         {/* Twitter Icon using react-icons */}
                         <a
-                            href="https://x.com/RajaDeeRaj10?t=Zbc_zW7ZCzPRBOeV7aWUmw&s=08"
+                            href="https://www.facebook.com/profile.php?id=61577124824119"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-400 hover:text-blue-400 transition duration-300"
                             aria-label="Twitter Profile"
                         >
-                            <FaTwitter /> {/* Replaced <i> with FaTwitter component */}
+                            <FaFacebook /> {/* Replaced <i> with FaTwitter component */}
                         </a>
                         {/* You can add more react-icons here if needed, e.g., FaFacebook, FaInstagram */}
                     </div>
-                    <p>&copy; Copyright mukthaghosh 2025</p>
+                    <p>&copy; Copyright Raja deeraj 2025</p>
                 </div>
             </div>
         </section>

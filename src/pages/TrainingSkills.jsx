@@ -36,6 +36,20 @@ const TrainingSkills = () => {
             title: "Student Development Trainer",
             content: "The program covers a variety of topics, such as time management, study skills, and career planning.It is designed to help students develop the skills and confidence they need to achieve their academic and personal goals.",
         },
+        {
+            id: 7,
+            title: "Faculty Development Trainer",
+            content: "This program is focused on enhancing teaching methodologies, communication skills, and curriculum design. It equips educators with modern pedagogical tools, classroom engagement techniques, and professional development strategies to improve academic delivery and student outcomes."
+        }, {
+            id: 8,
+            title: "Motivational Speaker",
+            content: "This program aims to inspire individuals by addressing topics such as personal growth, resilience, leadership mindset, and goal setting. It leverages real-life experiences and dynamic delivery to motivate students and professionals to unlock their potential and pursue excellence."
+        }, {
+            id: 9,
+            title: "Life Coach",
+            content: "This program empowers individuals to achieve clarity, direction, and purpose in life. Through personalized guidance in areas like decision-making, confidence building, career transitions, and work-life balance, it fosters self-awareness and long-term personal development."
+
+        },
     ];
 
     return (
