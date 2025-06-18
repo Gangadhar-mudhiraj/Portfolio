@@ -1,6 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Navbar from '../views/Navbar'
+import Contactme from '../pages/Contactme'
 const MainLayout = () => {
     return (
 
@@ -9,6 +10,7 @@ const MainLayout = () => {
             <main className=''>
                 <Outlet />
             </main>
+            <Contactme />
         </>
     )
 }
