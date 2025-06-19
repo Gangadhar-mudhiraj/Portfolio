@@ -3,7 +3,7 @@ import Title from "../utils/Title"; // Assuming Title component handles its own 
 
 import AITLogo from "../assets/AIT.jpeg";
 import AnuragUniversityLogo from "../assets/Anuraguniversity.jpg";
-
+import techm from "../assets/image.png"; // Assuming this is the logo for Tech Mahindra, if not, replace with the correct one
 import BVRITLogo from "../assets/bvrit.png";
 import CBITLogo from "../assets/CBIT.png";
 import CMRCETLogo from "../assets/cmrcet.jpeg";
@@ -13,8 +13,9 @@ import KITSLogo from "../assets/KITS.png";
 import MallareddyUniversityLogo from "../assets/Mallareddyuniversity.jpg";
 import MRCELogo from "../assets/MRCE.jpeg";
 import MRECWLogo from "../assets/MRECW.png";
-
-
+import serco from "../assets/image1.png"; // Assuming this is the logo for serco, if not, replace with the correct one
+import AVNLogo from "../assets/avn.png"; // Assuming this is the logo for AVN Engineering College, if not, replace with the correct one
+import indus from "../assets/image2.png"; // Assuming this is the logo for Indus, if not, replace with the correct one
 import QISLogo from "../assets/QIS.jpeg";
 import RITLogo from "../assets/RIT.jpg";
 import SardarLogo from "../assets/Sardar.jpg";
@@ -44,31 +45,38 @@ const Achievement = ({ number, title, description }) => {
     );
 };
 
-const Item = ({ image, title, subTitle, description, appreciation }) => {
+const Item = ({ image, title, subTitle, description, appreciation, highlight }) => {
     return (
-        <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center max-w-sm mx-auto mb-8">
-            <div className="flex flex-col items-center mb-4">
-                {/* University/College Logo */}
-                <img src={image} alt={`${title}'s college logo`} className="w-20 h-20 object-contain rounded-full mb-3 border-2 border-blue-200" />
-                {/* Student Name */}
-                <h3 className="text-xl font-semibold text-black">{title}</h3>
-                {/* College Name */}
-                <p className="text-sm text-blue-500 mt-1">{subTitle}</p>
-            </div>
-            <div className="text-gray-700 leading-relaxed">
-                {/* Description - using dangerouslySetInnerHTML for the <br> tags */}
-                <p dangerouslySetInnerHTML={{ __html: description }}></p>
+        <div className={`bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center text-center max-w-sm w-full mx-auto mb-8 h-[460px] transition-all duration-300 ${highlight ? 'border-4 border-yellow-400 scale-105 bg-yellow-50' : ''
+            }`}>
+            <div>
+                {/* Logo, Name, College */}
+                <div className="flex flex-col items-center mb-4">
+                    <img
+                        src={image}
+                        alt={`${title}'s college logo`}
+                        className="w-20 h-20 object-contain rounded-full mb-3 border-2 border-blue-200"
+                    />
+                    <h3 className="text-xl font-semibold text-black">{title}</h3>
+                    <p className="text-sm text-blue-500 mt-1">{subTitle}</p>
+                </div>
 
-                {/* New: Display appreciation if it exists */}
-                {appreciation && (
-                    <p className="mt-3 font-medium text-blue-600">
-                        {appreciation}
-                    </p>
-                )}
+                {/* Description */}
+                <div className="text-gray-700 text-sm leading-relaxed">
+                    <p className="line-clamp-5" dangerouslySetInnerHTML={{ __html: description }}></p>
+
+                    {appreciation && (
+                        <p className="mt-3 font-medium text-blue-600">
+                            {appreciation}
+                        </p>
+                    )}
+                </div>
             </div>
         </div>
     );
 };
+
+
 
 // ---
 // Gallery Component
@@ -99,6 +107,37 @@ const Gallery = () => {
         }
     ];
     const testimonials = [
+        {
+            title: "Raja DeeRaj",
+            subTitle: "serco",
+            description: "soft skills trainer",
+            description: "Raja DeeRaj sir has been instrumental in enhancing our communication and interpersonal skills through highly engaging and practical sessions. His training with Serco was a perfect blend of motivation, real-life examples, and actionable strategies.",
+            image: serco
+        },
+        {
+            title: "Raja DeeRaj",
+            subTitle: "Indus",
+            description: "soft skills trainer ,At Indus, Raja DeeRaj sir delivered powerful soft skills sessions that emphasized clarity, collaboration, and confidence. His interactive style encouraged every participant to open up and learn in a fun and impactful way.",
+            image: indus // Added image
+        },
+        {
+            title: "Raja DeeRaj",
+            subTitle: "Tech mahindra & AA EDUTECH",
+            description: "English language aand Soft skills trainer ,Raja DeeRaj sir's sessions for Tech Mahindra and AA Edutech focused on enhancing English language proficiency and workplace communication. His well-structured training helped us improve both spoken and professional communication with ease.",
+            image: techm // Assuming CMRCETLogo is the trainer's logo
+        },
+        {
+            title: "Srinivas",
+            subTitle: "AVN ENGINEERING COLLEGE",
+            description: "Raja DeeRaj sir's training was incredibly engaging and interactive. I learned so much about effective communication and teamwork.",
+            image: AVNLogo // Added image
+        },
+        {
+            title: "Srinivas",
+            subTitle: "ANURAG UNIVERSITY",
+            description: "Raja DeeRaj sir's training was incredibly engaging and interactive. I learned so much about effective communication and teamwork.",
+            image: AnuragUniversityLogo // Added image
+        },
 
         {
             title: "Pravalika Chilvuri",
@@ -197,18 +236,20 @@ const Gallery = () => {
             <Album />
             <div className="container mx-auto p-6">
                 <Title text={"testimonials"} className="text-center mb-12 text-blue-800" /> {/* Centering title and adjusting color */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8"> {/* Responsive grid layout */}
-                    {testimonials.map((item, index) => ( // Corrected mapping syntax
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
+                    {testimonials.map((item, index) => (
                         <Item
-                            key={index} // Add a unique key for list items
+                            key={index}
                             title={item.title}
                             description={item.description}
                             image={item.image}
                             subTitle={item.subTitle}
                             appreciation={item.appreciation}
+                            highlight={index < 3} // 👉 Highlight only first 3
                         />
                     ))}
                 </div>
+
 
 
             </div>
