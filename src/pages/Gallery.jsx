@@ -47,7 +47,7 @@ const Achievement = ({ number, title, description }) => {
 
 const Item = ({ image, title, subTitle, description, appreciation, highlight }) => {
     return (
-        <div className={`bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center text-center max-w-sm w-full mx-auto mb-8 h-[460px] transition-all duration-300 ${highlight ? 'border-4 border-yellow-400 scale-105 bg-yellow-50' : ''
+        <div className={`bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center text-center max-w-sm w-full mx-auto mb-8 transition-all duration-300 ${highlight ? 'border-4 border-yellow-400 scale-105 bg-yellow-50' : ''
             }`}>
             <div>
                 {/* Logo, Name, College */}
@@ -110,8 +110,7 @@ const Gallery = () => {
         {
             title: "Raja DeeRaj",
             subTitle: "serco",
-            description: "soft skills trainer",
-            description: "Raja DeeRaj sir has been instrumental in enhancing our communication and interpersonal skills through highly engaging and practical sessions. His training with Serco was a perfect blend of motivation, real-life examples, and actionable strategies.",
+            description: "soft skills trainer , Raja DeeRaj sir has been instrumental in enhancing our communication and interpersonal skills through highly engaging and practical sessions. His training with Serco was a perfect blend of motivation, real-life examples, and actionable strategies.",
             image: serco
         },
         {
