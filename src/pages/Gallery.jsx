@@ -51,7 +51,7 @@ const Item = ({ image, title, subTitle, description, appreciation }) => {
                 {/* University/College Logo */}
                 <img src={image} alt={`${title}'s college logo`} className="w-20 h-20 object-contain rounded-full mb-3 border-2 border-blue-200" />
                 {/* Student Name */}
-                <h3 className="text-xl font-semibold text-blue-700">{title}</h3>
+                <h3 className="text-xl font-semibold text-black">{title}</h3>
                 {/* College Name */}
                 <p className="text-sm text-blue-500 mt-1">{subTitle}</p>
             </div>
@@ -196,7 +196,7 @@ const Gallery = () => {
         <section id='gallery' className="py-16 bg-blue-50"> {/* Light blue background */}
             <Album />
             <div className="container mx-auto p-6">
-                <Title text={"Hear it from My Happy Pupils"} className="text-center mb-12 text-blue-800" /> {/* Centering title and adjusting color */}
+                <Title text={"testimonials"} className="text-center mb-12 text-blue-800" /> {/* Centering title and adjusting color */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8"> {/* Responsive grid layout */}
                     {testimonials.map((item, index) => ( // Corrected mapping syntax
                         <Item

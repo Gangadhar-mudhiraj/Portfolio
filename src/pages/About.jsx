@@ -11,8 +11,8 @@ import cambridgeMedalImage from "../assets/camebridge.png";
 const Item = ({ title, content }) => {
     return (
         <div className="mb-6 p-4 bg-white rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold text-sky-500">{title}</h3>
-            <p className="text-gray-700 mt-1">{content}</p>
+            <h3 className="text-xl font-semibold text-black">{title}</h3>
+            <p className="text-gray-500 mt-1">{content}</p>
         </div>
     );
 };
@@ -29,12 +29,12 @@ const Award = ({ title, content, image }) => {
     return (
         <div className="mb-6 p-4 bg-white rounded-lg shadow-md">
             <h3
-                className="text-xl font-semibold text-sky-500 cursor-pointer"
+                className="text-xl font-semibold text-gray-900 cursor-pointer"
                 onClick={handleTitleClick}
             >
                 {title}
             </h3>
-            <p className="text-gray-700 mt-1">{content}</p>
+            <p className="text-gray-500 mt-1">{content}</p>
 
             {/* Conditionally render the image based on the 'showImage' state */}
             {showImage && (
