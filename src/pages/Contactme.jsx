@@ -24,11 +24,7 @@ const Contactme = () => {
         window.location.href = "mailto:arajadeeraj@gmail.com";
     };
 
-    // Function to handle "Get my CV" button click
-    const handleGetMyCV = () => {
-        // Open the CV PDF link in a new tab
-        window.open("https://rajdeeraj.netlify.app/Raja%20DeeRaj.pdf", "_blank");
-    };
+   
 
     return (
         <section id='contact' className="bg-gray-900 py-16 text-white"> {/* Dark background, generous padding */}
@@ -86,11 +82,7 @@ const Contactme = () => {
                         handleClick={handleMessageMe}
                         className="bg-blue-600 text-white hover:bg-blue-700 w-full sm:w-auto"
                     />
-                    <Button
-                        text={"Get my CV"}
-                        handleClick={handleGetMyCV}
-                        className="bg-transparent border-2 border-blue-600 text-blue-400 hover:bg-blue-600 hover:text-white w-full sm:w-auto"
-                    />
+                    
                 </div>
 
                 {/* --- */}
