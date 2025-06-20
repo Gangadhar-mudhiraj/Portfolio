@@ -33,13 +33,13 @@ const Album = () => {
         { src: pic18, orientation: 'horizontal' },
         { src: pic1, orientation: 'vertical' },
         { src: pic2, orientation: 'vertical' },
-        { src: pic5, orientation: 'vertical' },
-        { src: pic9, orientation: 'vertical' },
+        // { src: pic5, orientation: 'vertical' },
+        // { src: pic9, orientation: 'vertical' },
         { src: pic10, orientation: 'vertical' },
         { src: pic12, orientation: 'vertical' },
         { src: pic14, orientation: 'vertical' },
-        { src: pic15, orientation: 'vertical' },
-        { src: pic16, orientation: 'vertical' },
+        // { src: pic15, orientation: 'vertical' },
+        // { src: pic16, orientation: 'vertical' },
     ];
 
     return (

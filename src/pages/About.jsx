@@ -23,7 +23,8 @@ const Award = ({ title, content, image }) => {
 
     // Function to toggle the image's visibility
     const handleTitleClick = () => {
-        setShowImage(!showImage); // Toggles between true and false
+        setShowImage(!showImage);
+    // Toggles between true and false
     };
 
     return (
@@ -50,13 +51,17 @@ const Award = ({ title, content, image }) => {
 
 const About = () => {
 
+    // Function to handle "Get my CV" button click
+    const handleGetMyCV = () => {
+        // Open the CV PDF link in a new tab
+        window.open("https://rajdeeraj.netlify.app/Raja%20DeeRaj.pdf", "_blank");
+    };
     const handleProfile = () => {
         const profileImageUrl = resume;
         window.open(resume, "_blank")
 
     }
 
-    const navigate = useNavigate()
 
     const experience = [
         {
@@ -103,13 +108,17 @@ const About = () => {
         <section id='about' className="py-16 bg-blue-50"> {/* Changed to bg-blue-50 for a softer blue */}
             <div className='container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 p-4'> {/* Added gap-8 for spacing */}
                 {/* Image Section */}
-                <div className=" flex justify-center mb-8 md:mb-0">
-                    <div className="rounded-full overflow-hidden h-98 w-60 shadow-md">
-                        {/* object-position can shift the visible part, but it's still a circular crop */}
-                        <img src={profileImage} alt="Profile of RajaDeeRaj" />
-                        {/* You might need custom values like object-[position_value] or adjust based on your image */}
+                <div className="flex justify-center mb-8 md:mb-0">
+                    <div className="overflow-hidden w-[200px] h-[400px] ">
+                        <img
+                            src={profileImage}
+                            alt="Profile of RajaDeeRaj"
+                            className="w-full h-full object-cover p-3 rounded-4xl"
+                        />
                     </div>
                 </div>
+
+
 
                 {/* Text Content Section */}
                 <div className="md:w-1/2 text-center md:text-left">
@@ -121,34 +130,35 @@ const About = () => {
 
                     {/* Description paragraph */}
                     <p className="text-lg text-gray-600 mb-8 max-w-prose md:max-w-none mx-auto"> {/* Added max-w-prose for readability on wide screens */}
-                        A Career Development Program, Soft Skill Trainer, and Personality Development trainer.
+                        An , soft skills trainer, motivational speaker and career coach
                     </p>
 
                     {/* Action Buttons */}
                     <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
                         <Button
-                            text={"get my profile".toUpperCase()}
-                            className='bg-black hover:bg-gray-800 text-white' // Explicitly define all colors
+                            text={"GET MY PROFILE"}
+                            className="px-6 py-2 rounded-md font-semibold bg-black text-white border border-black hover:bg-gray-800 transition-colors duration-200"
                             handleClick={handleProfile}
                         />
 
                         <Button
-                            text={"get my portfolio".toUpperCase()}
-                            className='bg-transparent border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white' // Explicitly define all colors
-                            handleClick={() => {
-                                window.open("https://drive.google.com/file/d/13pR4EqEfQBOAIVjWtsAfYZJ4Kn8KmwF2/view?usp=drivesdk", "_blank")
-                            }}
+                            text={"GET MY PORTFOLIO"}
+                            className="px-6 py-2 rounded-md font-semibold bg-transparent text-blue-600 border border-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-200"
+                            handleClick={() =>
+                                window.open(
+                                    "https://drive.google.com/file/d/13pR4EqEfQBOAIVjWtsAfYZJ4Kn8KmwF2/view?usp=drivesdk",
+                                    "_blank"
+                                )
+                            }
                         />
+
                         <Button
-                            text={"getmyav".toUpperCase()}
-                            className='bg-transparent border border-gray-400 text-gray-600 hover:bg-gray-200' // Explicitly define all colors
-                            handleClick={() => {
-                                const fileUrl = "https://rajdeeraj.netlify.app/final.mp4";
-                                // Option 1: Open in a new tab/window (most common for external files)
-                                window.open(fileUrl, '_blank');
-                            }}
+                            text={"GET MYCV"}
+                            className="px-6 py-2 rounded-md font-semibold bg-blue-500 text-white border border-blue-600 hover:bg-blue-600 hover:brightness-110 transition-colors duration-200"
+                            handleClick={handleGetMyCV}
                         />
                     </div>
+
                 </div>
             </div>
             <div className="screen bg-blue-100 p-8">
