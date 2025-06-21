@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import bestAchieverImage from "../assets/best-achiever.png";
 import appreciationImage from "../assets/appreciation.png";
 import cambridgeMedalImage from "../assets/camebridge.png";
+import Click from "../assets/clickme.png";
 
 const Item = ({ title, content }) => {
     return (
@@ -24,17 +25,25 @@ const Award = ({ title, content, image }) => {
     // Function to toggle the image's visibility
     const handleTitleClick = () => {
         setShowImage(!showImage);
-    // Toggles between true and false
+        // Toggles between true and false
     };
 
     return (
         <div className="mb-6 p-4 bg-white rounded-lg shadow-md">
             <h3
-                className="text-xl font-semibold text-gray-900 cursor-pointer"
+                className="text-xl font-semibold hover:text-2xl text-blue-600 cursor-pointer flex items-center gap-2"
                 onClick={handleTitleClick}
             >
                 {title}
+                <span>
+                    <img
+                        src={Click}
+                        alt=""
+                        className="w-5 h-5 transition-transform duration-200 hover:scale-125 hover:brightness-125"
+                    />
+                </span>
             </h3>
+
             <p className="text-gray-500 mt-1">{content}</p>
 
             {/* Conditionally render the image based on the 'showImage' state */}
@@ -109,7 +118,7 @@ const About = () => {
             <div className='container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 p-4'> {/* Added gap-8 for spacing */}
                 {/* Image Section */}
                 <div className="flex justify-center mb-8 md:mb-0">
-                    <div className="overflow-hidden w-[200px] h-[400px] ">
+                    <div className="overflow-hidden w-[250px] h-[500px] ">
                         <img
                             src={profileImage}
                             alt="Profile of RajaDeeRaj"
@@ -130,7 +139,7 @@ const About = () => {
 
                     {/* Description paragraph */}
                     <p className="text-lg text-gray-600 mb-8 max-w-prose md:max-w-none mx-auto"> {/* Added max-w-prose for readability on wide screens */}
-                        An , soft skills trainer, motivational speaker and career coach
+                        A soft skills trainer, motivational speaker and career coach
                     </p>
 
                     {/* Action Buttons */}
