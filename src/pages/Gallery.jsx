@@ -1,9 +1,9 @@
 
 import Title from "../utils/Title"; // Assuming Title component handles its own styling
-
+ // Assuming this is the logo for Click, if not, replace with the correct one
 import AITLogo from "../assets/AIT.jpeg";
 import AnuragUniversityLogo from "../assets/Anuraguniversity.jpg";
-import techm from "../assets/image.png"; // Assuming this is the logo for Tech Mahindra, if not, replace with the correct one
+import techm from "../assets/image0.png"; // Assuming this is the logo for Tech Mahindra, if not, replace with the correct one
 import BVRITLogo from "../assets/bvrit.png";
 import CBITLogo from "../assets/CBIT.png";
 import CMRCETLogo from "../assets/cmrcet.jpeg";
@@ -64,7 +64,17 @@ const Item = ({ image, title, subTitle, description, appreciation, highlight, Qu
 
                 {/* Description */}
                 <div className="text-gray-700 text-sm leading-relaxed">
-                    <p className="line-clamp-5" dangerouslySetInnerHTML={{ __html: description }}></p>
+                    <p
+                        className="line-clamp-5"
+                        dangerouslySetInnerHTML={{
+                            __html: description.includes("Raja DeeRaj")
+                                ? description.replace(
+                                    /Raja DeeRaj/g,
+                                    '<B>Raja Dheeraj</B>' // highlights the name
+                                )
+                                : description
+                        }}
+                    ></p>
 
                     {appreciation && (
                         <p className="mt-3 font-medium text-blue-600">
@@ -109,20 +119,20 @@ const Gallery = () => {
     ];
     const testimonials = [
         {
-            title: "Raja DeeRaj",
+            title: "Nirmal Kumar",
             subTitle: "ICT ACADAMY",
-            description: "soft skills trainer , Raja DeeRaj sir has been instrumental in enhancing our communication and interpersonal skills through highly engaging and practical sessions. His training with Serco was a perfect blend of motivation, real-life examples, and actionable strategies.",
+            description: "Soft Skills Trainer, sincerely thanks you for the support in employability skills and Campus-to-Corporate projects, appreciating your expertise and positive response.",
             image: serco,
         },
         {
-            title: "Raja DeeRaj",
+            title: "George Mathew",
             subTitle: "Indus",
-            description: "soft skills trainer ,At Indus, Raja DeeRaj sir delivered powerful soft skills sessions that emphasized clarity, collaboration, and confidence. His interactive style encouraged every participant to open up and learn in a fun and impactful way.",
+            description: "Raja DeeRaj is a fantastic trainer—friendly, fun, and encouraging, with strong time management and work ethics.He effectively trains on product concepts while providing valuable insights for great outcomes.",
             image: indus,
         },
         {
-            title: "Raja DeeRaj",
-            subTitle: "Tech mahindra & AA EDUTECH",
+            title: "Sridhar Neelam",
+            subTitle: "Tech mahindra & Nirmaan organisation",
             description: "English language aand Soft skills trainer ,Raja DeeRaj sir's sessions for Tech Mahindra and AA Edutech focused on enhancing English language proficiency and workplace communication. His well-structured training helped us improve both spoken and professional communication with ease.",
             image: techm,
         },
@@ -170,10 +180,10 @@ const Gallery = () => {
         },
         {
             title: "Sudha Rani",
-            subTitle: "TRK",
+            subTitle: "TKR",
             description: "I was struggling with proper communication before, attended Raja DeeRaj sir sessions regularly happy for the trainer's patience and clear explanations, I can speak now understand it completely in communication with confident",
             image: TKRJEEELogo,
-            qualification: "B.Tech CSE 3rd Year"
+            qualification: " B-Tech Aiml 3rd Year"
         },
         {
             title: "Mahesh Reddy",
@@ -215,7 +225,7 @@ const Gallery = () => {
             subTitle: "Sardar",
             description: "This Soft Skills session has a unique ability to create a comfortable learning environment where everyone feels empowered to participate and share their thoughts. This made the training sessions both informative and enjoyable.",
             image: SardarLogo,
-            qualification: "B.Tech IT 3rd Year"
+            qualification: "Degree B.com 3rd Year"
         },
         {
             title: "Deepika Rani",
