@@ -17,6 +17,7 @@ import pic15 from "../assets/15.jpeg";
 import pic16 from "../assets/16.jpeg";
 import pic17 from "../assets/17.jpeg";
 import pic18 from "../assets/18.jpeg";
+import pic19 from "../assets/19.jpeg";
 
 import Title from "../utils/Title";
 
@@ -31,6 +32,7 @@ const Album = () => {
         { src: pic13, orientation: 'horizontal' },
         { src: pic17, orientation: 'horizontal' },
         { src: pic18, orientation: 'horizontal' },
+        { src: pic19, orientation: 'horizontal' },
         { src: pic1, orientation: 'vertical' },
         { src: pic2, orientation: 'vertical' },
         // { src: pic5, orientation: 'vertical' },
