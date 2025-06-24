@@ -119,143 +119,144 @@ const Gallery = () => {
     ];
     const testimonials = [
         {
-            title: "Nirmal Kumar - project lead",
-            subTitle: "ICT ACADAMY",
-            description: "Soft Skills Trainer, sincerely thanks you for the support in employability skills and Campus-to-Corporate projects, appreciating your expertise and positive response.",
+            title: "Nirmal Kumar - Project Lead",
+            subTitle: "ICT ACADEMY",
+            description: "Raja DeeRaj, the Soft Skills Trainer, sincerely thanks you for your support in employability skills and Campus-to-Corporate projects, appreciating your expertise and positive response.",
             image: serco,
         },
         {
-            title: "George Mathew - managing director",
-            subTitle: "Indus",
-            description: "Raja DeeRaj is a fantastic trainer—friendly, fun, and encouraging, with strong time management and work ethics.He effectively trains on product concepts while providing valuable insights for great outcomes.",
+            title: "George Mathew - Managing Director",
+            subTitle: "Indus Management Pvt Ltd",
+            description: "Raja DeeRaj is a fantastic trainer — friendly, fun, and encouraging, with strong time management and work ethics. He effectively trains on product concepts while providing valuable insights for great outcomes.",
             image: indus,
         },
         {
-            title: "Sridhar Neelam - project manager",
-            subTitle: "Tech mahindra & Nirmaan organisation",
-            description: "English language aand Soft skills trainer ,Raja DeeRaj sir's sessions for Tech Mahindra and AA Edutech focused on enhancing English language proficiency and workplace communication. His well-structured training helped us improve both spoken and professional communication with ease.",
+            title: "Sridhar Neelam - Project Manager",
+            subTitle: "Nirmaan Organisation",
+            description: "Raja DeeRaj, as a Soft Skills Trainer, has the ability to lead enriching discussions with examples and real-time case studies. Many students praised him for helping with their personality development both professionally and personally.",
             image: techm,
         },
         {
             title: "Vishnu",
             subTitle: "AVN ENGINEERING COLLEGE",
-            description: "Raja DeeRaj sir's training was incredibly engaging and interactive. I learned so much about effective communication and teamwork.",
+            description: "Raja DeeRaj sir's training was incredibly engaging and interactive. I learned so much about effective communication and teamwork thanks to his expert guidance.",
             image: AVNLogo,
             qualification: "B.Tech DS 3rd Year"
         },
         {
             title: "Maha Laxmi",
             subTitle: "ANURAG UNIVERSITY",
-            description: "Raja DeeRaj sir's training was incredibly engaging and interactive. I learned so much about effective communication and teamwork.",
+            description: "Raja DeeRaj sir's training was remarkably engaging and interactive. I learned a lot about effective communication and teamwork from him.",
             image: AnuragUniversityLogo,
             qualification: "B.Tech CSE 4th Year"
         },
         {
             title: "Pravalika Chilvuri",
             subTitle: "Malla Reddy University",
-            description: "I've learned so much from this training how to be assertive engaging and interactive with team positively. Our trainer Raja DeeRaj sir training is fun learning activity based.",
+            description: "I've learned so much from Raja DeeRaj sir's training about how to be assertive and collaborative. His teaching style makes learning fun and interactive.",
             image: MallareddyUniversityLogo,
             qualification: "B.Tech IT 3rd Year"
         },
         {
-            title: "Yashwanth vedagiri",
+            title: "Yashwanth Vedagiri",
             subTitle: "KITS",
-            description: "My trainer Raja Deeraj sir’s ability to explain complex concepts in a clear and concise manner is truly remarkable. I feel confident in my understanding now.",
+            description: "Raja DeeRaj sir has an exceptional ability to explain complex concepts clearly and concisely. I now feel more confident in my understanding.",
             image: KITSLogo,
             qualification: "B.Tech CSE 4th Year"
         },
         {
-            title: "R.Moksha Sri",
-            subTitle: "Anurag university",
-            description: "Our trainer Raja DeeRaj sir has a knack for creating a supportive and encouraging learning environment. I feel comfortable asking questions and participating in class.",
+            title: "R. Moksha Sri",
+            subTitle: "Anurag University",
+            description: "Raja DeeRaj sir has a knack for creating a supportive and encouraging learning environment. I felt comfortable asking questions and participating in class.",
             image: AnuragUniversityLogo,
             qualification: "B.Tech IT 3rd Year"
         },
         {
             title: "Sharanya",
             subTitle: "CBIT",
-            description: "My trainer Raja DeeRaj sir is not only an excellent facilitator but also a great mentor. His training methodology helped me grow both personally and professionally which leads to achieving in career.",
+            description: "Raja DeeRaj sir is not only an excellent facilitator but also a great mentor. His training approach helped me grow both personally and professionally, leading to greater achievements.",
             image: CBITLogo,
             qualification: "B.Tech CSE 4th Year"
         },
         {
             title: "Sudha Rani",
             subTitle: "TKR",
-            description: "I was struggling with proper communication before, attended Raja DeeRaj sir sessions regularly happy for the trainer's patience and clear explanations, I can speak now understand it completely in communication with confident",
+            description: "I struggled with communication before, but Raja DeeRaj sir's patient and clear explanations gave me the confidence and understanding I needed to speak effectively.",
             image: TKRJEEELogo,
-            qualification: " B-Tech Aiml 3rd Year"
+            qualification: "B.Tech AIML 3rd Year"
         },
         {
             title: "Mahesh Reddy",
             subTitle: "QIS",
-            description: "Raja DeeRaj sir is a good trainer has a unique ability to make even the most challenging topics easy to grasp. Sir is always willing to explain things multiple times until everyone understands.",
+            description: "Raja DeeRaj sir is a great trainer with a unique ability to make challenging topics easy to understand. He patiently explains until everyone comprehends.",
             image: QISLogo,
             qualification: "B.Tech CSE 3rd Year"
         },
         {
             title: "Deekshitha",
             subTitle: "RIT",
-            description: "Our trainer Raja DeeRaj has a fantastic ability to connect with students and make them feel comfortable. They're always approachable and willing to help.",
+            description: "Raja DeeRaj has a fantastic ability to connect with students and make them feel comfortable. He's always approachable and ready to help.",
             image: RITLogo,
             qualification: "B.Tech IT 4th Year"
         },
         {
             title: "Sangitha Pandit",
             subTitle: "AIT",
-            description: "My trainer Raja DeeRaj has inspired me to pursue my goals with greater determination. I'm now more motivated than ever before. Sir has sophisticated content with rich experience in training methodologies to get good results.",
+            description: "Raja DeeRaj has inspired me to pursue my goals with greater determination. His rich experience and sophisticated training methods have motivated me to aim higher.",
             image: AITLogo,
             qualification: "B.Tech CSE 3rd Year"
         },
         {
             title: "M Nandini",
             subTitle: "MRECW",
-            description: "Raja DeeRaj sir is a trainer cum motivator has helped me develop a love for learning. I'm now excited to continue my education and pursue new challenges. I'm so grateful for the opportunity to learn from this trainer.",
+            description: "Raja DeeRaj sir is both a trainer and motivator who has sparked in me a love for learning. I'm now excited to pursue new challenges and continue my education.",
             image: MRECWLogo,
             qualification: "B.Tech CSE 4th Year"
         },
         {
             title: "Tejaswini",
-            subTitle: "Vasavi engineering college",
-            description: "The soft skills session was incredibly enriching, providing valuable insights and logic to enhance both personal and professional development. Training is delivered with fun learning activities.",
+            subTitle: "Vasavi Engineering College",
+            description: "Raja DeeRaj sir's soft skills session was incredibly enriching, providing valuable insights for both personal and professional development. The fun learning activities were a highlight.",
             image: VasaviLogo,
             qualification: "B.Tech CSE 3rd Year"
         },
         {
             title: "Rishita Nanduri",
-            subTitle: "Sardar patel degree college",
-            description: "This Soft Skills session has a unique ability to create a comfortable learning environment where everyone feels empowered to participate and share their thoughts. This made the training sessions both informative and enjoyable.",
+            subTitle: "Sardar Patel Degree College",
+            description: "Raja DeeRaj sir's soft skills session created a comfortable learning environment where everyone felt encouraged to participate and share their thoughts. It made the training both informative and enjoyable.",
             image: SardarLogo,
-            qualification: "Degree B.com 3rd Year"
+            qualification: "Degree B.Com 3rd Year"
         },
         {
             title: "Deepika Rani",
             subTitle: "GITAM UNIVERSITY",
-            description: "The Soft Skills session was superb, interactive and engaging. The trainer's methodology is enthusiastic, and I loved the way of explanation.",
+            description: "Raja DeeRaj sir's soft skills session was superb — interactive, engaging, and highly valuable. I loved the energy and clarity of the trainer's explanations.",
             image: GITAMLogo,
             qualification: "B.Tech CSE 4th Year"
         },
         {
             title: "Abhinay Vollala",
             subTitle: "CMR",
-            description: "MASTER in soft skills, Raja DeeRaj is a fantastic trainer with an enthusiastic personality. He made every concept practical and engaging.",
+            description: "Raja DeeRaj is a master of soft skills training with an enthusiastic and practical approach. He made every concept come alive, making learning a truly enriching experience.",
             image: CMRJEEELogo,
             qualification: "B.Tech IT 3rd Year"
         },
         {
             title: "Sirisha Meda",
             subTitle: "BVRIT Narsapur",
-            description: "The communication workshop was a game-changer! Raja DeeRaj sir's approach made complex ideas incredibly easy to grasp, and his energy was truly infectious. I walked away feeling far more confident and equipped.",
+            description: "The communication workshop with Raja DeeRaj was a game-changer! His approach made complex ideas easy to understand, and his energy was infectious. I left feeling more confident and well-prepared.",
             image: BVRITLogo,
             qualification: "B.Tech CSE 4th Year"
         },
         {
             title: "Aruna Devi",
             subTitle: "MRCE",
-            description: "I've attended many training sessions, but this soft skills program by Raja DeeRaj sir stood out. The practical exercises and sir's clear, enthusiastic guidance made every moment valuable. Highly recommend for anyone looking to genuinely improve.",
+            description: "Raja DeeRaj's soft skills program was unlike any other I've attended. The practical exercises combined with his enthusiastic and clear guidance made every moment valuable. Highly recommended for anyone looking to genuinely improve.",
             image: MRCELogo,
             qualification: "B.Tech CSE 3rd Year"
         }
     ];
+
 
 
     return (
