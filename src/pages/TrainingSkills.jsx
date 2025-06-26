@@ -13,7 +13,7 @@ const TrainingSkills = () => {
         },
         {
             id: 2,
-            title: "Career Development Program Facilitator",
+            title: "Career Development Trainer",
             content: "The program covers a variety of topics, such as resume writing, interviewing, and networking.It is designed to help individuals identify their career goals, develop a career plan, and find a job that they love.",
         },
         {
@@ -32,11 +32,6 @@ const TrainingSkills = () => {
             content: "Develop a business plan, identify and overcome challenges, and improve your leadership skills. Whether you are a startup or an established business, It help you achieve your business goals.",
         },
         {
-            id: 6,
-            title: "Student Development Trainer",
-            content: "The program covers a variety of topics, such as time management, study skills, and career planning.It is designed to help students develop the skills and confidence they need to achieve their academic and personal goals.",
-        },
-        {
             id: 7,
             title: "Faculty Development Trainer",
             content: "This program is focused on enhancing teaching methodologies, communication skills, and curriculum design. It equips educators with modern pedagogical tools, classroom engagement techniques, and professional development strategies to improve academic delivery and student outcomes."
@@ -50,6 +45,15 @@ const TrainingSkills = () => {
             content: "This program empowers individuals to achieve clarity, direction, and purpose in life. Through personalized guidance in areas like decision-making, confidence building, career transitions, and work-life balance, it fosters self-awareness and long-term personal development."
 
         },
+        {
+            id: 10,
+            title: "Train The Trainer",
+            content: "his program is designed for aspiring trainers and facilitators who want to hone their delivery, design, and engagement skills. It focuses on mastering adult learning principles, effective communication techniques, and interactive training methodologies, empowering participants to create impactful and memorable learning experiences."
+        }, {
+            id: 11,
+            title: "Trainer- Freelancer ",
+            content: "This program is tailored for students transitioning from academic life to the professional world. It focuses on building essential soft skills such as communication, teamwork, time management, and professional etiquette, ensuring a smooth and confident shift from campus to corporate environments."
+        }
     ];
 
     return (

@@ -13,10 +13,11 @@ import pic11 from "../assets/11.jpeg";
 import pic12 from "../assets/12.jpeg";
 import pic13 from "../assets/13.jpeg";
 import pic14 from "../assets/14.jpeg";
-import pic15 from "../assets/15.jpeg";
-import pic16 from "../assets/16.jpeg";
+import pic15 from "../assets/pic15.png";
+import pic16 from "../assets/pic16.png";
 import pic17 from "../assets/17.jpeg";
 import pic18 from "../assets/18.jpeg";
+import pic19 from "../assets/19.jpeg";
 
 import Title from "../utils/Title";
 
@@ -31,15 +32,16 @@ const Album = () => {
         { src: pic13, orientation: 'horizontal' },
         { src: pic17, orientation: 'horizontal' },
         { src: pic18, orientation: 'horizontal' },
+        { src: pic19, orientation: 'horizontal' },
+        { src: pic15, orientation: 'horizontal' },
+        { src: pic16, orientation: 'horizontal' },
         { src: pic1, orientation: 'vertical' },
         { src: pic2, orientation: 'vertical' },
-        { src: pic5, orientation: 'vertical' },
-        { src: pic9, orientation: 'vertical' },
+        // { src: pic5, orientation: 'vertical' },
+        // { src: pic9, orientation: 'vertical' },
         { src: pic10, orientation: 'vertical' },
         { src: pic12, orientation: 'vertical' },
         { src: pic14, orientation: 'vertical' },
-        { src: pic15, orientation: 'vertical' },
-        { src: pic16, orientation: 'vertical' },
     ];
 
     return (

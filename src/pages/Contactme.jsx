@@ -3,7 +3,7 @@ import Title from "../utils/Title"; // Assuming Title component handles its own 
 import Button from "../utils/Button"; // Import the Button component
 
 // Import specific icons from react-icons/fa (for Font Awesome icons)
-import { FaLinkedin, FaFacebook } from 'react-icons/fa';
+import { FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const Contactme = () => {
     // Define your social media links dynamically with actual URLs
@@ -24,11 +24,7 @@ const Contactme = () => {
         window.location.href = "mailto:arajadeeraj@gmail.com";
     };
 
-    // Function to handle "Get my CV" button click
-    const handleGetMyCV = () => {
-        // Open the CV PDF link in a new tab
-        window.open("https://rajdeeraj.netlify.app/Raja%20DeeRaj.pdf", "_blank");
-    };
+
 
     return (
         <section id='contact' className="bg-gray-900 py-16 text-white"> {/* Dark background, generous padding */}
@@ -86,17 +82,15 @@ const Contactme = () => {
                         handleClick={handleMessageMe}
                         className="bg-blue-600 text-white hover:bg-blue-700 w-full sm:w-auto"
                     />
-                    <Button
-                        text={"Get my CV"}
-                        handleClick={handleGetMyCV}
-                        className="bg-transparent border-2 border-blue-600 text-blue-400 hover:bg-blue-600 hover:text-white w-full sm:w-auto"
-                    />
+
                 </div>
 
                 {/* --- */}
                 {/* Footer Section with React-Icons */}
                 {/* --- */}
                 <div className="mt-16 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+
+
                     <div className="flex justify-center gap-6 mb-4 text-2xl">
                         {/* LinkedIn Icon using react-icons */}
                         <a
@@ -106,21 +100,33 @@ const Contactme = () => {
                             className="text-gray-400 hover:text-blue-500 transition duration-300"
                             aria-label="LinkedIn Profile"
                         >
-                            <FaLinkedin /> {/* Replaced <i> with FaLinkedin component */}
+                            <FaLinkedin />
                         </a>
-                        {/* Twitter Icon using react-icons */}
+
+                        {/* Facebook Icon using react-icons */}
                         <a
                             href="https://www.facebook.com/profile.php?id=61577124824119"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-400 hover:text-blue-400 transition duration-300"
-                            aria-label="Twitter Profile"
+                            aria-label="Facebook Profile"
                         >
-                            <FaFacebook /> {/* Replaced <i> with FaTwitter component */}
+                            <FaFacebook />
                         </a>
-                        {/* You can add more react-icons here if needed, e.g., FaFacebook, FaInstagram */}
+
+                        {/* Instagram Icon using react-icons */}
+                        <a
+                            href="https://www.instagram.com/raja_dheeraj3/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-pink-500 transition duration-300"
+                            aria-label="Instagram Profile"
+                        >
+                            <FaInstagram />
+                        </a>
                     </div>
-                    <p>&copy; Copyright Raja deeraj 2025</p>
+
+                    <p>&copy; Copyright Raja DeeRaj 2025</p>
                 </div>
             </div>
         </section>
