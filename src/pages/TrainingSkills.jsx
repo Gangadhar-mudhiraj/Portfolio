@@ -51,7 +51,7 @@ const TrainingSkills = () => {
             content: "his program is designed for aspiring trainers and facilitators who want to hone their delivery, design, and engagement skills. It focuses on mastering adult learning principles, effective communication techniques, and interactive training methodologies, empowering participants to create impactful and memorable learning experiences."
         }, {
             id: 11,
-            title: "Campus To Corporate",
+            title: "Trainer- Freelancer ",
             content: "This program is tailored for students transitioning from academic life to the professional world. It focuses on building essential soft skills such as communication, teamwork, time management, and professional etiquette, ensuring a smooth and confident shift from campus to corporate environments."
         }
     ];

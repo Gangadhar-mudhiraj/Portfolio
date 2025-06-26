@@ -62,10 +62,7 @@ const About = () => {
     };
 
     const experience = [
-        {
-            title: "Serco International BPO",
-            content: "Master Trainer - English & Soft Skills "
-        },
+
         {
             title: "Indus Management Consultants",
             content: "Master Trainer - English & Soft Skills "
@@ -151,18 +148,7 @@ const About = () => {
         >
             <div className='container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 p-4'>
                 {/* Image Section */}
-                <motion.div
-                    className="flex justify-center mb-8 md:mb-0"
-                    variants={imageVariants} // Apply animation variants
-                >
-                    <div className="relative w-[250px] h-[500px] flex items-center justify-center">
-                        <img
-                            src={profileImage}
-                            alt="Profile of RajaDeeRaj"
-                            className="w-full h-full object-contain p-3 rounded-4xl animate-image"
-                        />
-                    </div>
-                </motion.div>
+
 
                 {/* Text Content Section */}
                 <motion.div
@@ -191,9 +177,21 @@ const About = () => {
                             }
                         />
                         <Button
-                            text={"GET MY CV"}
+                            text={"Get my CV"}
                             className="px-6 py-2 rounded-md font-semibold bg-blue-500 text-white border border-blue-600 hover:bg-blue-600 hover:brightness-110 transition-colors duration-200"
                             handleClick={handleGetMyCV}
+                        />
+                    </div>
+                </motion.div>
+                <motion.div
+                    className="flex justify-center mb-8 md:mb-0"
+                    variants={imageVariants} // Apply animation variants
+                >
+                    <div className="relative w-[250px] h-[500px] flex items-center justify-center">
+                        <img
+                            src={profileImage}
+                            alt="Profile of RajaDeeRaj"
+                            className="w-full h-full object-contain p-3 rounded-4xl animate-image mt-14"
                         />
                     </div>
                 </motion.div>
